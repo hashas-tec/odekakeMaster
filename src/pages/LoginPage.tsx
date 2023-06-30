@@ -1,9 +1,10 @@
 import { Button } from 'react-bootstrap';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const TopPage: React.FC = () => {
+const LoginPage: React.FC = () => {
   return (
-    <div>
+    <div className='card'>
       <div>ログインページ</div>
       <div className="form-floating mb-3">
         <input
@@ -18,9 +19,10 @@ const TopPage: React.FC = () => {
         <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
         <label htmlFor="floatingPassword">Password</label>
       </div>
-      <Button>テストでーす</Button>
+      <Button>ログイン</Button>
+      <Link to="account-create">アカウントがない方は作成</Link>
     </div>
   );
 };
 
-export default TopPage;
+export default LoginPage;

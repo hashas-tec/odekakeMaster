@@ -1,16 +1,27 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+
 import './App.css';
-import { Route } from 'react-router-dom';
-import { Routes } from '../node_modules/react-router-dom/dist/index';
-import TopPage from './pages/TopPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
+import AccountCreatePage from './pages/AccountCreatePage';
+import NotFoundPage from './pages/NotFoundPage';
 
 const App: React.FC = () => {
-
   return (
-    <Routes>
-      <Route path="/" element={<TopPage />} />
-    </Routes>
+
+    <div className="App">
+      <Router>
+        <div>
+          <Routes>
+            <Route path="/" element={<LoginPage />} />
+            <Route path='account-create' element={<AccountCreatePage />} />
+            <Route path="*" element={<NotFoundPage />} /> 
+          </Routes>
+        </div>
+      </Router>
+    </div>
+
   );
 };
 
