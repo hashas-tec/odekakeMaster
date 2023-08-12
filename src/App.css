@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+.carouse-image {
+  /* background-position: center; */
+  /* background-size: cover; */
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.home-page {
+  position: relative;
+}

@@ -11,8 +11,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "@firebase/app": "^0.9.14",
+    "@firebase/auth": "^1.0.0",
     "bootstrap": "^5.3.0",
     "firebase": "^9.23.0",
+    "firebase-admin": "^11.10.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "prettier": "^2.8.8",
@@ -23,6 +26,7 @@
     "sort-by": "^1.2.0"
   },
   "devDependencies": {
+    "@firebase/rules-unit-testing": "^3.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@testing-library/react-hooks": "^8.0.1",
@@ -41,6 +45,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "firebase-functions-test": "^3.1.0",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
     "ts-jest": "^29.1.0",
