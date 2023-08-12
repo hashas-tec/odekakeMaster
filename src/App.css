@@ -1,8 +1,9 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  width: 100%;
+
 }
 
 .logo {
@@ -50,4 +51,41 @@
 
 .home-page {
   position: relative;
+}
+
+.header {
+  background-color: #A5DEFF;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+
+  .gear-button {
+    background-color: #A5DEFF;
+  }
+
+  .header-space {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.footer {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  position: fixed;
+  bottom: 0;
+  
+  .footer-text {
+    font-size: 9px;
+    font-family: 'Robot';
+    color: #A5DEFF;
+    text-decoration: none;
+  }
 }

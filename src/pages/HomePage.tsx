@@ -4,6 +4,9 @@ import { Dispatch, SetStateAction, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { switchByIsSignIn } from "../utils/AuthState"
 import TutorialComponents from "../components/TutorialComponents"
+import HeaderComponents from "../components/HeaderComponents"
+import FooterComponents from "../components/FooterComponents"
+
 
 const HomePage = ({   
   setIsAuth
@@ -32,12 +35,16 @@ const HomePage = ({
     }
   }
 
+
+
   return (
-    <div className="">
+    <>
       {displayTutorial()}
+      <HeaderComponents text='おでかけマスター'/>
       <button onClick={logoutHandler}>ログアウト</button>
       <h1>ようこそ！</h1>
-    </div>
+      <FooterComponents />
+    </>
   )
 }
 
